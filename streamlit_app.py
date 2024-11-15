@@ -12,7 +12,7 @@ st.write('the name on your smoothie will be:',name_on_order)
 #option = st.selectbox(
 #    "what is your favorite fruit?",('Banana','Strawberries','Peaches'))
 #st.write('Your favorite fruit is:',option)
-cnx.st.connetion("snowflake")
+cnx=st.connetion("snowflake")
 session = cnx.session()
 my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT_NAME'))
 #st.dataframe(data=my_dataframe, use_container_width=True) # to create a table
